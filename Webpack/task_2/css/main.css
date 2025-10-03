@@ -15,6 +15,7 @@
 }
 
 /* Style pour le bouton et le compteur */
-button {
+#startButton,
+#count {
   display: inline-block;
 }
