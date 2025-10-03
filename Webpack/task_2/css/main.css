@@ -1,0 +1,20 @@
+/* Style pour le logo */
+#logo {
+  width: 200px;
+  height: 200px;
+  background-image: url('../assets/holberton-logo.jpg');
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+}
+
+/* Style pour le compteur */
+#count {
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Style pour le bouton et le compteur */
+button {
+  display: inline-block;
+}
