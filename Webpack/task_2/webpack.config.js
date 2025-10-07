@@ -6,7 +6,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public'),
-    clean: true, // Nettoie le dossier public avant chaque build
+    clean: true,
   },
   module: {
     rules: [
@@ -49,6 +49,6 @@ module.exports = {
   performance: {
     maxAssetSize: 1000000, // 1 MB
     maxEntrypointSize: 1000000,
-    hints: false, // Désactive les warnings de taille
+    hints: false, 
   },
 };
