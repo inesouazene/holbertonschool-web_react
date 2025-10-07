@@ -9,12 +9,12 @@
 /* Style pour le compteur */
 #count {
   font-weight: bold;
-  margin-left: 10px;
   display: inline-block;
 }
 
 /* Style pour le bouton */
 button {
   display: inline-block;
+  margin-right: 10px;
 }
 
