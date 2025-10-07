@@ -18,9 +18,6 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
         type: 'asset/resource',
-        generator: {
-          filename: 'images/[name][ext]',
-        },
         use: [
           {
             loader: 'image-webpack-loader',
@@ -44,10 +41,5 @@ module.exports = {
         ],
       },
     ],
-  },
-  performance: {
-    maxAssetSize: 1000000, // 1 MB
-    maxEntrypointSize: 1000000,
-    hints: 'warning', 
   },
 };
