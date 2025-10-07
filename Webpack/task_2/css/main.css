@@ -4,12 +4,17 @@
   height: 200px;
   background-image: url('../assets/holberton-logo.jpg');
   background-size: 200px 200px;
-  background-repeat: no-repeat;
 }
 
 /* Style pour le compteur */
 #count {
   font-weight: bold;
   margin-left: 10px;
+  display: inline-block;
+}
+
+/* Style pour le bouton */
+button {
+  display: inline-block;
 }
 

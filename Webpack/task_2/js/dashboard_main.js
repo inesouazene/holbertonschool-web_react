@@ -17,7 +17,7 @@ $('body').prepend('<div id="logo"></div>');
 $('body').append('<p>Holberton Dashboard</p>');
 $('body').append('<p>Dashboard data for the students</p>');
 $('body').append('<button>Click here to get started</button>');
-$('body').append('<span id="count"></span>');
+$('body').append('<p id="count"></p>');
 $('body').append('<p>Copyright - Holberton School</p>');
 
 // debounce la fonction updateCounter avec un délai de 500 ms

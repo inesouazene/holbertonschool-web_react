@@ -6,7 +6,6 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public'),
-    clean: true,
   },
   module: {
     rules: [
@@ -49,6 +48,6 @@ module.exports = {
   performance: {
     maxAssetSize: 1000000, // 1 MB
     maxEntrypointSize: 1000000,
-    hints: false, 
+    hints: 'warning', 
   },
 };
