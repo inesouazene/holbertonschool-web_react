@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { name } = require('file-loader');
 
 module.exports = {
   mode: 'development',
@@ -42,7 +43,31 @@ module.exports = {
       // Règle pour les images
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
-        loader: 'file-loader',
+        type: 'asset/resource',
+        generator: {
+          filename: '[name].[ext]',
+        },
+        use: [
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 65,
+              },
+              optipng: {
+                enabled: true,
+              },
+              pngquant: {
+                quality: [0.65, 0.90],
+                speed: 4,
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+            },
+          },
+        ],
       },
     ],
   },
