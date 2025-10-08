@@ -42,15 +42,7 @@ module.exports = {
       // Règle pour les images
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: '[name][ext]',
-        },
-        use: [
-          {
-            loader: 'image-webpack-loader',
-          },
-        ],
+        loader: 'file-loader',
       },
     ],
   },
