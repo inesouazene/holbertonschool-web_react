@@ -1,0 +1,14 @@
+.notification-items {
+  border: 1px dashed #e1003c;
+  padding: 10px 15px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.notification-items p {
+  margin: 0;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+}
