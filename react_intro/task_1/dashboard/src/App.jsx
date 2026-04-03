@@ -4,8 +4,6 @@ import { getCurrentYear, getFooterCopy } from './utils';
 import Notifications from './Notifications';
 
 function App() {
-  const currentYear = getCurrentYear();
-
   return (
     <>
     <div className='root-notification'>
@@ -19,7 +17,7 @@ function App() {
         <p>Login to access the full dashboard</p>
       </div>
       <div className="App-footer">
-        <p>Copyright {currentYear} - {getFooterCopy(false)}</p>
+        <p>Copyright {getCurrentYear()} {getFooterCopy(true)}</p>
       </div>
     </>
   );
