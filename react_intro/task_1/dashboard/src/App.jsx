@@ -6,7 +6,7 @@ import Notifications from './Notifications';
 function App() {
   return (
     <>
-    <div className='root-notification'>
+    <div className='root-notifications'>
       <Notifications />
     </div>
       <div className="App-header">
