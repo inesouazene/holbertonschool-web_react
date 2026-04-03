@@ -11,4 +11,4 @@ function getFooterCopy(isIndex) {
 module.exports = {
     getCurrentYear,
     getFooterCopy
-}
+};
