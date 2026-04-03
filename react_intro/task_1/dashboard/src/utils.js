@@ -1,9 +1,14 @@
 // function getCurrentYear() that returns the current year
-export function getCurrentYear() {
+function getCurrentYear() {
   return new Date().getFullYear();
 }
 
 // function getFooterCopy(isIndex) that returns Holberton School when it's true, otherwise it'll return Holberton School main dashboard
-export function getFooterCopy(isIndex) {
+function getFooterCopy(isIndex) {
     return isIndex ? 'Holberton School' : 'Holberton School main dashboard';
 } 
+
+module.exports = {
+    getCurrentYear,
+    getFooterCopy
+}
